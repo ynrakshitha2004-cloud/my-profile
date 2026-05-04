@@ -1,24 +1,30 @@
 function initContactValidation(){
-    const contactModal =document.getElementById("contact-modal");
+    const contactModal = document.getElementById("contact-modal");
     const contactForm = document.getElementById("contact-form");
     const contactName = document.getElementById("contact-name");
     const contactEmail = document.getElementById("contact-email");
     const formMessage = document.getElementById("form-message");
 
-    if(!contactModal || !contactForm || !contactName || !contactEmail || !formMessage){
+    if(!contactModal || !contactForm|| !contactName|| !contactEmail||!formMessage){
         console.log("Contact form elements not found");
         return;
     }
+
+    const savedName = localStorage.getItem('draftContactName');
+    const savedEmail = localStorage.getItem('draftContactEmail');
+    if (savedName) contactName.value = savedName;
+    if (savedEmail) contactEmail.value = savedEmail;
+
     contactForm.addEventListener("submit",function(event){
         event.preventDefault();
 
         const name = contactName.value.trim();
         const email = contactEmail.value.trim();
-
+        
         formMessage.textContent = "";
-        formMessage.className = "text-sm";
+        formMessage.classList = "text-sm";
 
-        //name validation
+        //Name validation
         if(name === ""){
             formMessage.textContent = "Name is required";
             formMessage.classList.add("text-red-500");
@@ -31,9 +37,9 @@ function initContactValidation(){
             contactName.focus();
             return;
         }
-        //email validation
+        //Email validation
         if(email === ""){
-            formMessage.textContent = "email is required";
+            formMessage.textContent = "Email is required";
             formMessage.classList.add("text-red-500");
             contactEmail.focus();
             return;
@@ -50,11 +56,15 @@ function initContactValidation(){
         formMessage.classList.add("text-green-600");
         console.log("Valid credentials:",{name:name,email:email});
         contactForm.reset();
+        localStorage.removeItem('draftContactName');
+        localStorage.removeItem('draftContactEmail');
     });
     contactName.addEventListener("input",function(){
         formMessage.textContent = "";
+        localStorage.setItem('draftContactName', contactName.value);
     });
     contactEmail.addEventListener("input",function(){
         formMessage.textContent = "";
+        localStorage.setItem('draftContactEmail', contactEmail.value);
     });
 }

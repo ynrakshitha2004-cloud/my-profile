@@ -1,9 +1,24 @@
+alert("Welcome to Rakshitha's Portfolio!");
 document.addEventListener("DOMContentLoaded",function(){
-    //Render renderSkills
-    renderSkills();
+    // Render features dynamically
+   
+    
     initModal();
+    renderAboutMe();
+    renderSkills();
     initContactValidation();
     initThemeToggle();
-    filterProject();
-    searchProject();
+    searchProjects();
+    renderEducation();
+    renderExperience();
+    // renderCertifications();
+    // renderHackathons();
+
+    initScrollProgress();
+    initScrollSpy();
+    initBackToTop();
+    initTypingAnimation();
+    initRecentlyViewed();
+    initDynamicGreeting();
+    initGeolocation();
 })

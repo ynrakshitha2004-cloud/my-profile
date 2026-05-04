@@ -1,236 +1,578 @@
-<!-- MERN_Stu_FebMay26Mys\W4\D5\portfolio-project\index.html -->
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
-    <title>Week 3 & 4 Portfolio Project</title>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <link rel="stylesheet" href="css/custom.css">
-
 </head>
 
-<body>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
 
-    <!-- HERO SECTION -->
 
-    <section
-        class="min-h-screen flex flex-col lg:flex-row lg:items-center lg:justify-between px-8 lg:px-16 py-20 gap-12 lg:gap-20">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    </head>
 
-        <div class="order-2 lg:order-1 flex-1 lg:max-w-lg text-center lg:text-left">
+    <body class="bg-white text-black dark:bg-gray-900 dark:text-white">
 
-            <h1 class="text-5xl mb-6">Rakshitha Y N</h1>
-
-            <p class="text-xl lg:text-2xl text-slate-600 font-bold mb-10 max-w-md mx-auto lg:mx-0">
-                Full-Stack developer | MERN enthusiast | Competitive Programmer
-            </p>
-
-            <div
-                class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center lg:items-start mb-8">
-
-                <a href="#projects" class="bg-red-400 hover:bg-green-500 px-10 py-4 rounded shadow-xl">
-                    View Projects
-                </a>
-
-                <a href="#resume" class="bg-blue-400 hover:bg-green-500 px-10 py-4 rounded shadow-xl">
-                    Download Resume
-                </a>
-
-            </div>
-
-            <div class="flex flex-wrap gap-6 justify-center lg:justify-start text-sm font-bold">
-
-                <span>98 Github commits</span>
-                <span>100 LeetCode Questions Solved</span>
-                <span>5 live projects completed</span>
-
-            </div>
-
+        <!-- BACKGROUND -->
+        <div class="background-container">
+            <div class="blob blob1"></div>
+            <div class="blob blob2"></div>
+            <div class="blob blob3"></div>
         </div>
 
-        <div class="order-1 lg:order-2 w-full lg:w-96 max-w-sm mx-auto lg:mx-0">
-
-            <img src="assets/images/img.jpg" alt="My photo"
-                class="aspect-square w-full rounded shadow-lg mx-auto lg:mx-0 hover:ring-blue-500 transition-all duration-300 hover:scale-[1.02]"
-                loading="lazy">
-
+        <!-- PROGRESS BAR -->
+        <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-blue-500 w-0 z-50">
         </div>
+        <!-- HERO -->
 
-    </section>
+        <!-- HERO SECTION -->
+        <section class="min-h-screen flex flex-col items-center justify-center px-6 lg:px-16 py-20 bg-slate-50">
 
-    <!-- NAVBAR -->
 
-    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b shadow-lg">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-center mb-10 tracking-wide 
+bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 
+bg-clip-text text-transparent animate-pulse">
+                🚀 Welcome To My Portfolio
+            </h1>
 
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- CONTENT CONTAINER -->
+            <div class="max-w-3xl text-center">
 
-            <a href="#"
-                class="text-2xl font-bold bg-clip-text bg-gradient-to-r from-red-400 to-slate-700 text-transparent">
-                RYN
-            </a>
+                <!-- NAME -->
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-black">
+                    Rakshitha Y N
+                </h2>
 
-            <ul class="hidden md:flex items-center gap-10">
-
-                <li><a href="#projects" class="text-lg font-bold hover:text-blue-600">Projects</a></li>
-
-                <li><a href="#experience" class="text-lg font-bold hover:text-blue-600">Experience</a></li>
-
-                <li><a href="#skills" class="text-lg font-bold hover:text-blue-600">Skills</a></li>
-
-            </ul>
-            <button id="theme-toggle" class="bg-gray-200 px-4 py-2 font-bold">Theme</button>
-            <a href="#contact" class="bg-red-400 hover:bg-green-500 rounded transition-all duration-300 px-8 py-3">
-                Let's talk
-            </a>
-
-        </div>
-
-    </nav>
-
-    <!-- PROJECTS -->
-
-    <section id="projects" class="py-24 px-8 lg:px-16">
-
-        <div class="max-w-7xl mx-auto">
-
-            <div class="text-center mb-10">
-
-                <h2 class="text-4xl lg:text-5xl mb-6">My Projects</h2>
-
-                <p class="text-xl max-w-2xl mx-auto">
-                    Enterprise scale full-stack applications built with modern frameworks
+                <!-- ROLE -->
+                <p class="text-2xl font-bold mb-6">
+                    I am a <span id="typing-text" class="text-blue-600"></span>
                 </p>
 
-            </div>
+                <!-- DESCRIPTION -->
+                <p class="text-lg text-slate-600 font-medium mb-8">
+                    A passionate Computer Science student with a love for coding, problem-solving, and
+                    building innovative projects. I thrive on learning new technologies and applying them
+                    to create impactful solutions.
+                </p>
 
-            <!-- Project Search (Feature will attach here) -->
+                <!-- BUTTONS -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
 
-            <div class="mb-10 text-center">
+                    <a href="https://github.com/ynrakshitha2004-cloud" target="_blank"
+                        class="border border-slate-800 text-slate-800 hover:bg-blue-800 hover:text-white px-6 py-3 rounded-lg transition duration-300">
+                        💻 GitHub
+                    </a>
 
-                <input id="project-search" type="text" placeholder="Search projects..."
-                    class="border rounded px-6 py-3 w-full max-w-md">
-
-            </div>
-
-            <!-- Project Filter Bar -->
-
-            <div id="project-filters" class="flex flex-wrap justify-center gap-4 mb-12">
-            </div>
-
-            <!-- Dynamic container for projects -->
-
-            <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- EXPERIENCE -->
-
-    <section id="experience" class="py-24 px-8 lg:px-16">
-
-        <div class="max-w-4xl mx-auto">
-
-            <h2 class="text-4xl text-gray-700 text-center mb-20">
-                Education and Experience
-            </h2>
-
-            <!-- existing experience cards remain unchanged -->
-
-        </div>
-
-    </section>
-
-    <!-- SKILLS -->
-
-    <section id="skills" class="py-24 px-8 lg:px-16 bg-blue-100">
-
-        <div class="max-w-7xl mx-auto">
-
-            <h2 class="text-4xl text-center font-bold mb-20">
-                Skills
-            </h2>
-
-            <!-- Dynamic Skills Container -->
-
-            <div id="skills-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- CONTACT MODAL -->
-
-    <button id="modal-trigger"
-        class="fixed bottom-8 right-8 w-16 h-16 bg-blue-900 text-white rounded-full shadow-2xl flex items-center justify-center text-2xl font-bold">
-        ☏
-    </button>
-
-    <div id="contact-modal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-md">
-
-        <div class="flex items-center justify-center min-h-screen p-4">
-
-            <div id="modal-content"
-                class="bg-white w-full max-w-md rounded-2xl shadow-2xl scale-95 opacity-0 transition-all duration-300">
-
-                <div class="sticky top-0 border-b p-8 pt-12 bg-white">
-
-                    <h3 class="text-2xl font-bold">Contact Me</h3>
-
-                    <button id="modal-close" class="absolute top-6 right-6 text-2xl font-bold">
-                        ×
-                    </button>
+                    <a href="https://www.linkedin.com/in/rakshitha-yn/" target="_blank"
+                        class="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-lg transition duration-300">
+                        🔗 LinkedIn
+                    </a>
 
                 </div>
 
-                <form id="contact-form" class="p-8 space-y-4">
 
-                    <input id="contact-name" type="text" placeholder="Your name"
-                        class="w-full border rounded px-4 py-3">
 
-                    <input id="contact-email" type="email" placeholder="email@website.com"
-                        class="w-full border rounded px-4 py-3">
 
-                    <p id="form-message" class="text-sm text-red-500"></p>
+                <!-- BUTTONS -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
 
-                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#projects"
+                        class="border border-slate-800 text-slate-800 hover:bg-blue-800 hover:text-white px-6 py-3 rounded-lg transition duration-300">
+                        🚀 View Projects
+                    </a>
 
-                        <button type="button" id="form-cancel" class="flex-1 font-bold py-4 px-6">
-                            Cancel
+                    <a href="#contact"
+                        class="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-lg transition duration-300">
+                        📬 Contact Me
+                    </a>
+                </div>
+
+                <!-- STATS -->
+                <div class="flex flex-wrap gap-6 justify-center text-sm font-bold text-gray-700">
+                    <span>159+ GitHub commits</span>
+                    <span>100+ LeetCode Problems</span>
+                    <span>4 Live Projects</span>
+                </div>
+
+            </div>
+
+        </section>
+        </section>
+
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        </head>
+
+        <!-- ✅ Global Light Theme Applied -->
+
+        <body class="bg-slate-50 text-gray-900">
+
+            <!-- ✅ NAVBAR -->
+            <nav class="sticky top-0 z-50 bg-white border-b shadow-md">
+
+                <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+                    <!-- LOGO -->
+                    <a href="#"
+                        class="text-2xl font-bold bg-clip-text bg-gradient-to-r from-red-400 to-slate-700 text-transparent">
+                        RYN
+                    </a>
+
+                    <!-- MENU -->
+                    <ul class="hidden md:flex items-center gap-10">
+
+                        <li>
+                            <a href="#projects" class="text-lg font-bold hover:text-blue-600 transition">
+                                Projects
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#experience" class="text-lg font-bold hover:text-blue-600 transition">
+                                Experience
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#education" class="text-lg font-bold hover:text-blue-600 transition">
+                                Education
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#skills" class="text-lg font-bold hover:text-blue-600 transition">
+                                Skills
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- RIGHT SIDE ACTIONS -->
+                    <div class="flex items-center gap-3">
+
+                        <!-- THEME BUTTON -->
+
+                        <button id="theme-toggle" class="px-4 py-2 rounded-lg bg-gray-200 dark:bg-gray-700">
+                            🌙 Theme
                         </button>
 
-                        <button type="submit" class="flex-1 font-bold py-4 px-6">
-                            Submit
+                       <!--LANGUAGE--> 
+                        <!-- <button id="language-toggle"
+                            class="px-3 py-2 rounded bg-gray-800 text-white hover:bg-gray-700 transition">
+                            EN
+                        </button> -->
+
+                        <!-- CTA -->
+                        <a href="#contact"
+                            class="bg-blue-500 text-white hover:bg-blue-600 rounded px-4 py-2 transition font-semibold">
+                            Let's talk
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+
+
+
+
+            <!-- PROJECTS -->
+            <section id="projects" class="py-24 px-6 lg:px-16 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200">
+
+                <div class="max-w-7xl mx-auto">
+
+                    <!-- HEADER -->
+                    <h2 class="text-4xl font-bold text-center text-gray-800 mb-14">
+                        My Projects
+                    </h2>
+
+                    <!-- SEARCH -->
+                    <div class="text-center mb-10">
+                        <div class="relative max-w-xl mx-auto">
+                            <input id="project-search" class="w-full pl-12 pr-4 py-3 rounded-xl 
+          bg-white border border-gray-300 
+          text-gray-800 placeholder-gray-400
+          focus:outline-none focus:ring-2 focus:ring-cyan-500 transition"
+                                placeholder="Search projects, tech stack, features..." />
+
+                            <span class="absolute left-4 top-3.5 text-gray-400">🔍</span>
+                        </div>
+                    </div>
+
+                    <!-- FILTER BUTTONS -->
+                    <div id="project-filters" class="flex flex-wrap justify-center gap-4 mb-12">
+
+                        <button
+                            class="filter-btn px-5 py-2 rounded-full bg-cyan-500 text-white font-semibold shadow hover:scale-105 transition"
+                            data-filter="all">
+                            All
+                        </button>
+
+                        <button
+                            class="filter-btn px-5 py-2 rounded-full bg-white text-gray-700 border border-gray-300 hover:bg-gray-100 transition"
+                            data-filter="MERN">
+                            MERN Stack
+                        </button>
+
+                        <button
+                            class="filter-btn px-5 py-2 rounded-full bg-white text-gray-700 border border-gray-300 hover:bg-gray-100 transition"
+                            data-filter="Frontend">
+                            Frontend
+                        </button>
+
+                        <button
+                            class="filter-btn px-5 py-2 rounded-full bg-white text-gray-700 border border-gray-300 hover:bg-gray-100 transition"
+                            data-filter="Dashboard">
+                            Dashboards
                         </button>
 
                     </div>
 
-                </form>
+                    <!-- PROJECT GRID -->
+                    <div id="projects-container" class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- EXPERIENCE -->
+            <!-- <section id="projects" class="py-24 px-6 lg:px-16 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200">
+            </section>
+            <div class="max-w-7xl mx-auto">
+
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">
+                    Education & Experience
+                </h2>
+
+                <!-- Timeline Line -->
+            <!-- <div class="hidden md:block relative mb-16">
+                    <div class="absolute top-1/2 left-0 w-full h-1 bg-gray-300"></div>
+                </div>
+
+                <!-- DATA -->
+            <!-- <div id="experience-container" class="grid md:grid-cols-3 gap-10"></div>
 
             </div>
+            </section> -->
 
-        </div>
+            <!-- Experience Section -->
+            <section id="experience"
+                class="py-24 px-6 lg:px-16 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200">
 
-    </div>
+                <div class="max-w-7xl mx-auto">
 
-    <!-- MAIN JS ENTRY -->
+                    <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">
+                        Education & Experience
+                    </h2>
 
-    <script src="js/data/projects.js"></script>
-    <script src="js/data/skills.js"></script>
-    <script src="js/features/skills-render.js"></script>
-    <script src="js/features/modal.js"></script>
-    <script src="js/features/contact-validation.js"></script>
-    <script src="js/features/theme-toggle.js"></script>
-    <script src="js/features/project-filter.js"></script>
-    <script src="js/features/project-search.js"></script>
-    <script src="js/main.js"></script>
+                    <!-- Timeline Line -->
+                    <div class="hidden md:block relative mb-16">
+                        <div class="absolute top-1/2 left-0 w-full h-1 bg-gray-300"></div>
+                    </div>
 
-</body>
+                    <!-- DATA -->
+                    <div id="experience-container" class="grid md:grid-cols-3 gap-10"></div>
 
-</html>
+                </div>
+
+
+                <!-- SKILLS -->
+                <section id="skills" class="py-24 px-8 lg:px-16 bg-gray-200">
+
+                    <div class="max-w-7xl mx-auto">
+
+                        <h2 class="text-4xl text-center font-bold mb-20">
+                            Skills
+                        </h2>
+
+                        <!-- Dynamic Skills Container -->
+                        <div id="skills-filters" class="flex flex-wrap justify-center gap-4 mb-8"></div>
+
+                        <div id="skills-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- CONTACT MODAL Together -->
+                <section id="contact" class="relative py-24 px-6 lg:px-20 overflow-hidden">
+
+                    <!-- 🌈 LIGHT BACKGROUND -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
+
+                    <!-- ✨ SOFT GLOW -->
+                    <div class="absolute top-0 left-0 w-72 h-72 bg-blue-200/40 blur-[120px] rounded-full"></div>
+                    <div class="absolute bottom-0 right-0 w-72 h-72 bg-purple-200/40 blur-[120px] rounded-full">
+                    </div>
+
+                    <div class="relative z-10">
+
+                        <!-- HEADER -->
+                        <div class="text-center mb-16">
+                            <h2 class="text-4xl font-bold mb-3 text-gray-800">
+                                Let's Work Together 🚀
+                            </h2>
+                            <p class="text-gray-500">
+                                Have a project or opportunity? Let’s connect and build something great.
+                            </p>
+                        </div>
+
+                        <!-- GRID -->
+                        <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+
+                            <!-- LEFT: CONTACT INFO -->
+                            <div class="space-y-6">
+
+                                <div
+                                    class="p-6 bg-gray-100 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800">📧 Email</h3>
+                                    <p class="text-gray-600">ynrakshitha2004@gmail.com</p>
+                                </div>
+
+                                <div
+                                    class="p-6 bg-gray-100 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800">🔗 LinkedIn</h3>
+                                    <a href="https://www.linkedin.com/in/rakshitha-yn/" target="_blank"
+                                        class="text-blue-600 hover:underline">
+                                        View Profile
+                                    </a>
+                                </div>
+
+                                <div
+                                    class="p-6 bg-gray-100 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800">💻 GitHub</h3>
+                                    <a href="https://github.com/ynrakshitha2004-cloud" target="_blank"
+                                        class="text-blue-600 hover:underline">
+                                        View Repository
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <!-- RIGHT: FORM -->
+                            <!-- <div class="bg-sky-100p-8 rounded-2xl border border-gray-200 shadow-lg">
+
+                                <form id="contact-form" class="space-y-5">
+
+                                    <input type="text" placeholder="Your Name" required minlength="2"
+                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+                                    <input type="email" placeholder="Your Email" required
+                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+                                    <textarea rows="4" placeholder="Your Message" required minlength="10"
+                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+
+                                    <button type="submit"
+                                        class="w-full py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition">
+                                        Send Message 🚀
+                                    </button>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section> -->
+                            <div class="
+    p-8 rounded-2xl
+
+    bg-gradient-to-br from-sky-50 via-white to-sky-100
+
+    border border-sky-200
+    shadow-lg hover:shadow-2xl
+
+    transition-all duration-300
+">
+
+                                <form id="contact-form" class="space-y-5">
+
+                                    <!-- NAME -->
+                                    <input type="text" placeholder="Your Name" required minlength="2" class="
+                w-full px-4 py-3 rounded-lg
+
+                bg-white/70
+                border border-sky-200
+
+                text-slate-800 placeholder-slate-400
+
+                focus:outline-none focus:ring-2 focus:ring-sky-400
+                focus:border-sky-400
+
+                transition
+            ">
+
+                                    <!-- EMAIL -->
+                                    <input type="email" placeholder="Your Email" required class="
+                w-full px-4 py-3 rounded-lg
+
+                bg-white/70
+                border border-sky-200
+
+                text-slate-800 placeholder-slate-400
+
+                focus:outline-none focus:ring-2 focus:ring-sky-400
+                focus:border-sky-400
+
+                transition
+            ">
+
+                                    <!-- MESSAGE -->
+                                    <textarea rows="4" placeholder="Your Message" required minlength="10" class="
+                w-full px-4 py-3 rounded-lg
+
+                bg-white/70
+                border border-sky-200
+
+                text-slate-800 placeholder-slate-400
+
+                focus:outline-none focus:ring-2 focus:ring-sky-400
+                focus:border-sky-400
+
+                transition
+            "></textarea>
+
+                                    <!-- BUTTON -->
+                                    <button type="submit" class="
+                w-full py-3 rounded-lg font-semibold
+
+                bg-gradient-to-r from-sky-500 to-blue-500
+                text-white
+
+                hover:from-sky-600 hover:to-blue-600
+
+                shadow-md hover:shadow-xl
+
+                transition-all duration-300
+            ">
+                                        Send Message 🚀
+                                    </button>
+
+                                </form>
+
+                            </div>
+                            <!-- CONTACT MODAL -->
+                            <button id="modal-trigger"
+                                class="fixed bottom-8 right-8 w-16 h-16 bg-blue-900 text-white rounded-full shadow-2xl flex items-center justify-center text-2xl font-bold">
+                                ☏
+                            </button>
+
+                            <div id="contact-modal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-md">
+
+                                <div class="flex items-center justify-center min-h-screen p-4">
+
+                                    <div id="modal-content"
+                                        class="bg-white w-full max-w-md rounded-2xl shadow-2xl scale-95 opacity-0 transition-all duration-300">
+
+                                        <div class="sticky top-0 border-b p-8 pt-12 bg-white">
+
+                                            <h3 class="text-2xl font-bold">Contact Me</h3>
+
+                                            <button id="modal-close" class="absolute top-6 right-6 text-2xl font-bold">
+                                                ×
+                                            </button>
+
+                                        </div>
+
+                                        <form id="contact-form" class="p-8 space-y-4">
+
+                                            <input id="contact-name" type="text" placeholder="Your name"
+                                                class="w-full border rounded px-4 py-3">
+
+                                            <input id="contact-email" type="email" placeholder="email@website.com"
+                                                class="w-full border rounded px-4 py-3">
+
+                                            <p id="form-message" class="text-sm text-red-500"></p>
+
+                                            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+
+                                                <button type="button" id="form-cancel"
+                                                    class="flex-1 font-bold py-4 px-6">
+                                                    Cancel
+                                                </button>
+
+                                                <button type="submit" class="flex-1 font-bold py-4 px-6">
+                                                    Submit
+                                                </button>
+
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <button id="back-to-top"
+                                class="fixed bottom-28 right-8 w-14 h-14 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg hidden items-center justify-center text-2xl z-40 transition-all duration-300 transform translate-y-4 opacity-0">
+                                ↑
+                            </button>
+                            <!--script-->
+                            <!-- =========================
+     DATA LAYER
+========================= -->
+                            <script defer src="js/data/projects.js"></script>
+                            <script defer src="js/data/skills.js"></script>
+                            <script defer src="js/data/experience.js"></script>
+
+                            <!-- =========================
+     CORE RENDERING
+========================= -->
+                            <script defer src="js/features/project-render.js"></script>
+                            <script defer src="js/features/skills-render.js"></script>
+                            <script defer src="js/features/experience-render.js"></script>
+
+                            <!-- =========================
+     FEATURE LOGIC
+========================= -->
+                            <script defer src="js/features/project-filter.js"></script>
+                            <script defer src="js/features/project-search.js"></script>
+                            <script defer src="js/features/skills-filter.js"></script>
+
+                            <!-- =========================
+     UI FEATURES
+========================= -->
+                            <script defer src="js/features/modal.js"></script>
+                            <script defer src="js/features/contact-validation.js"></script>
+
+                            <!-- ⭐ THEME (important) -->
+                            <script defer src="js/features/theme-toggle.js"></script>
+
+                            <script defer src="js/features/typing-animation.js"></script>
+                            <script defer src="js/features/greeting.js"></script>
+                            <script defer src="js/features/geolocation.js"></script>
+                            <script defer src="js/features/scroll-progress.js"></script>
+                            <script defer src="js/features/scroll-spy.js"></script>
+                            <script defer src="js/features/back-to-top.js"></script>
+
+                            <!-- =========================
+     EXTRA
+========================= -->
+                            <script defer src="js/features/certifications.js"></script>
+
+                            <!-- =========================
+     MAIN CONTROLLER (LAST ALWAYS)
+========================= -->
+                            <script defer src="js/main.js"></script>
+        </body>
+
+        </html>

@@ -4,43 +4,49 @@ const projectsData = [
     name: "Movie Time",
     category: "MERN",
     description:
-      "Full stack movie ticket booking application with AI-powered smart movie suggestions.",
+      "Full stack movie ticket booking application with AI-powered suggestions.",
     technologies: ["ReactJS", "ExpressJS", "MongoDB"],
     status: "Live",
-    liveDemo: "#",
-    github: "#"
+    github: "https://github.com/ynrakshitha2004-cloud"
   },
   {
     id: 2,
-    name: "Gola",
-    category: "MERN",
-    description:
-      "Cab booking platform that helps users quickly book rides for daily travel.",
-    technologies: ["ReactJS", "ExpressJS", "MongoDB"],
-    status: "Live",
-    liveDemo: "#",
-    github: "#"
-  },
-  {
-    id: 3,
     name: "Portfolio Website",
     category: "Frontend",
     description:
-      "Responsive personal portfolio website showcasing projects, skills, and contact information.",
+      "Responsive portfolio showcasing projects, skills, and contact system.",
     technologies: ["HTML", "Tailwind CSS", "JavaScript"],
     status: "Live",
-    liveDemo: "#",
-    github: "#"
+    github: "https://github.com/ynrakshitha2004-cloud"
   },
   {
-    id: 4,
+    id: 3,
     name: "Developer Stats Dashboard",
     category: "JavaScript",
     description:
-      "Dynamic dashboard that loads developer statistics and profile insights using Fetch API.",
+      "Dynamic dashboard with developer insights using Fetch API.",
     technologies: ["JavaScript", "Fetch API", "JSON"],
     status: "Demo",
-    liveDemo: "#",
-    github: "#"
+    github: "https://github.com/ynrakshitha2004-cloud"
+  },
+  {
+    id: 4,
+    name: "Steganography Tool",
+    category: "Security",
+    description:
+      "Hide secret messages inside images using steganography.",
+    technologies: ["Python", "OpenCV", "Encryption"],
+    status: "Prototype",
+    
+  },
+  {
+    id: 5,
+    name: "Skin Cancer Detection",
+    category: "AI/ML",
+    description:
+      "CNN + YOLOv8 model to detect and classify skin cancer from images.",
+    technologies: ["Python", "TensorFlow", "YOLOv8"],
+    status: "Research",
+   
   }
 ];

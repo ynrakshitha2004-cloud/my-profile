@@ -1,20 +1,29 @@
-function initThemeToggle(){
+function initThemeToggle() {
     const toggleBtn = document.getElementById("theme-toggle");
-    const body = document.body;
+    const root = document.documentElement;
 
-    const saveTheme = localStorage.getItem("portfolio-theme");
-
-    if(saveTheme === "dark"){
-        body.classList.add("dark-mode");
+    if (!toggleBtn) {
+        console.error("❌ Theme toggle button not found");
+        return;
     }
-    toggleBtn.addEventListener("click",function(){
-        body.classList.toggle("dark-mode");
-        if(body.classList.contains("dark-mode")){
-            localStorage.setItem("portfolio-theme","dark");
-            console.log("Dark mode enabled");
-        }else{
-            localStorage.setItem("portfolio-theme","light");
-            console.log("Light mode enabled");
-        }
-    })
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem("portfolio-theme");
+
+    if (savedTheme === "dark") {
+        root.classList.add("dark");
+    } else {
+        root.classList.remove("dark");
+    }
+
+    // Toggle theme
+    toggleBtn.addEventListener("click", () => {
+        root.classList.toggle("dark");
+
+        const isDark = root.classList.contains("dark");
+
+        localStorage.setItem("portfolio-theme", isDark ? "dark" : "light");
+
+        console.log(isDark ? "🌙 Dark Mode ON" : "☀️ Light Mode ON");
+    });
 }

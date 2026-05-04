@@ -1,26 +1,52 @@
-const skillsData = [
+// js/data/skills.js
+
+window.skillsData = [
   {
-    id: 1,
-    name: "ReactJS",
-    shortLabel: "R",
-    description: "Advanced Hooks, component-based UI, and state management."
+    name: "HTML",
+    icon: "🌐",
+    category: "Frontend",
+    description: "Semantic web structure"
   },
   {
-    id: 2,
-    name: "Tailwind CSS",
-    shortLabel: "T",
-    description: "Responsive layouts, utility-first styling, and clean UI building."
+    name: "CSS",
+    icon: "🎨",
+    category: "Frontend",
+    description: "Responsive UI design"
   },
   {
-    id: 3,
     name: "JavaScript",
-    shortLabel: "J",
-    description: "DOM manipulation, events, validation, Fetch API, and storage."
+    icon: "⚡",
+    category: "Frontend",
+    description: "Dynamic web behavior"
   },
   {
-    id: 4,
+    name: "React",
+    icon: "⚛️",
+    category: "Frontend",
+    description: "Component-based UI"
+  },
+  {
+    name: "Node.js",
+    icon: "🟢",
+    category: "Backend",
+    description: "Server-side runtime"
+  },
+  {
+    name: "Express.js",
+    icon: "🚀",
+    category: "Backend",
+    description: "Backend framework"
+  },
+  {
     name: "MongoDB",
-    shortLabel: "M",
-    description: "Document-based database design and backend integration."
+    icon: "🍃",
+    category: "Database",
+    description: "NoSQL database"
+  },
+  {
+    name: "Git",
+    icon: "🔧",
+    category: "Tools",
+    description: "Version control"
   }
 ];
