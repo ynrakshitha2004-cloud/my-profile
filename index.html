@@ -17,6 +17,8 @@
 <body class="bg-white text-black dark:bg-gray-900 dark:text-white">
 
 
+
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/custom.css">
     </head>
@@ -42,17 +44,21 @@
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-center mb-10 tracking-wide 
 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 
 bg-clip-text text-transparent animate-pulse">
-                🚀 Welcome To My Portfolio
+                Welcome To My Portfolio
             </h1>
 
+            </h1>
             <!-- CONTENT CONTAINER -->
             <div class="max-w-3xl text-center">
 
                 <!-- NAME -->
-                <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-black">
-                    Rakshitha Y N
+                <!-- <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-black">
+                    Hey iam Rakshitha 👋
+                </h2> -->
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-black flex items-center justify-center gap-2">
+                    <span>Hey I am Rakshitha</span>
+                    <span class="animate-bounce">👋</span>
                 </h2>
-
                 <!-- ROLE -->
                 <p class="text-2xl font-bold mb-6">
                     I am a <span id="typing-text" class="text-blue-600"></span>
@@ -166,7 +172,7 @@ bg-clip-text text-transparent animate-pulse">
                             🌙 Theme
                         </button>
 
-                       <!--LANGUAGE--> 
+                        <!--LANGUAGE-->
                         <!-- <button id="language-toggle"
                             class="px-3 py-2 rounded bg-gray-800 text-white hover:bg-gray-700 transition">
                             EN
@@ -246,28 +252,6 @@ bg-clip-text text-transparent animate-pulse">
 
                 </div>
             </section>
-
-
-            <!-- EXPERIENCE -->
-            <!-- <section id="projects" class="py-24 px-6 lg:px-16 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200">
-            </section>
-            <div class="max-w-7xl mx-auto">
-
-                <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">
-                    Education & Experience
-                </h2>
-
-                <!-- Timeline Line -->
-            <!-- <div class="hidden md:block relative mb-16">
-                    <div class="absolute top-1/2 left-0 w-full h-1 bg-gray-300"></div>
-                </div>
-
-                <!-- DATA -->
-            <!-- <div id="experience-container" class="grid md:grid-cols-3 gap-10"></div>
-
-            </div>
-            </section> -->
-
             <!-- Experience Section -->
             <section id="experience"
                 class="py-24 px-6 lg:px-16 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200">
@@ -307,6 +291,21 @@ bg-clip-text text-transparent animate-pulse">
                     </div>
 
                 </section>
+
+                <!-- Certificates Section -->
+                <section class="py-16 bg-gradient-to-r from-blue-100 to-blue-300 dark:from-gray-900 dark:to-gray-800">
+
+                    <h2 class="text-3xl font-bold text-center mb-10 text-gray-800 dark:text-white">
+                        Certificates
+                    </h2>
+
+                    <div id="certificates-container"
+                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
+                        <!-- JS will inject cards here -->
+                    </div>
+
+                </section>
+
 
                 <!-- CONTACT MODAL Together -->
                 <section id="contact" class="relative py-24 px-6 lg:px-20 overflow-hidden">
@@ -363,42 +362,8 @@ bg-clip-text text-transparent animate-pulse">
 
                             </div>
 
-                            <!-- RIGHT: FORM -->
-                            <!-- <div class="bg-sky-100p-8 rounded-2xl border border-gray-200 shadow-lg">
 
-                                <form id="contact-form" class="space-y-5">
-
-                                    <input type="text" placeholder="Your Name" required minlength="2"
-                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400">
-
-                                    <input type="email" placeholder="Your Email" required
-                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400">
-
-                                    <textarea rows="4" placeholder="Your Message" required minlength="10"
-                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
-
-                                    <button type="submit"
-                                        class="w-full py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition">
-                                        Send Message 🚀
-                                    </button>
-
-                                </form>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </section> -->
-                            <div class="
-    p-8 rounded-2xl
-
-    bg-gradient-to-br from-sky-50 via-white to-sky-100
-
-    border border-sky-200
-    shadow-lg hover:shadow-2xl
-
-    transition-all duration-300
+                            <div class="p-8 rounded-2xlbg-gradient-to-br from-sky-50 via-white to-sky-100border border-sky-200shadow-lg hover:shadow-2xl transition-all duration-300
 ">
 
                                 <form id="contact-form" class="space-y-5">
@@ -527,30 +492,24 @@ bg-clip-text text-transparent animate-pulse">
                                 ↑
                             </button>
                             <!--script-->
-                            <!-- =========================
-     DATA LAYER
-========================= -->
+                            <!--  DATA LAYER -->
                             <script defer src="js/data/projects.js"></script>
                             <script defer src="js/data/skills.js"></script>
                             <script defer src="js/data/experience.js"></script>
+                            <script defer src="js/data/certifications.js"></script>
 
-                            <!-- =========================
-     CORE RENDERING
-========================= -->
+                            <!-- CORE RENDERING-->
                             <script defer src="js/features/project-render.js"></script>
                             <script defer src="js/features/skills-render.js"></script>
                             <script defer src="js/features/experience-render.js"></script>
+                            <script defer src="js/features/certifications-render.js"></script>
 
-                            <!-- =========================
-     FEATURE LOGIC
-========================= -->
+                            <!-- FEATURE LOGIC-->
                             <script defer src="js/features/project-filter.js"></script>
                             <script defer src="js/features/project-search.js"></script>
                             <script defer src="js/features/skills-filter.js"></script>
 
-                            <!-- =========================
-     UI FEATURES
-========================= -->
+                            <!--  UI FEATURES-->
                             <script defer src="js/features/modal.js"></script>
                             <script defer src="js/features/contact-validation.js"></script>
 
@@ -564,14 +523,8 @@ bg-clip-text text-transparent animate-pulse">
                             <script defer src="js/features/scroll-spy.js"></script>
                             <script defer src="js/features/back-to-top.js"></script>
 
-                            <!-- =========================
-     EXTRA
-========================= -->
-                            <script defer src="js/features/certifications.js"></script>
 
-                            <!-- =========================
-     MAIN CONTROLLER (LAST ALWAYS)
-========================= -->
+                            <script defer src="js/features/certifications.js"></script>
                             <script defer src="js/main.js"></script>
         </body>
 
