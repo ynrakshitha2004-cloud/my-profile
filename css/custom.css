@@ -1,131 +1,171 @@
-DARK MODE
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-
-.dark-mode nav {
-  background-color: skyblue(110, 97, 97);
-  color: lightblue;
-}
-
-.dark-mode section {
-  background-color:slategray(79, 65, 65);
-  color: softviolet;
-}
-
-.dark-mode .bg-blue-100 {
-  background-color:lightgray !important;
-  color: white;
-}
-
-.dark-mode .bg-white {
-  background-color: rgb(24, 17, 43) !important;
-}
-
-.dark-mode .text-gray-700 {
-  color: white !important;
-}
-
-/* SKILL CARD */
-.skill-card {
-  padding: 25px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: center;
-  transition: all 0.4s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Glow Effect */
-.skill-card::before {
-  content: "";
-  position: absolute;
-  width: 150%;
-  height: 150%;
-  background: radial-gradient(circle, rgba(59,130,246,0.3), transparent);
-  top: -50%;
-  left: -50%;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.skill-card:hover::before {
-  opacity: 1;
-}
-
-/* Hover Animation */
-.skill-card:hover {
-  transform: translateY(-12px) scale(1.03);
-  border-color: rgba(59,130,246,0.5);
-}
-
-/* Icon */
-.skill-card .icon {
-  font-size: 40px;
-  margin-bottom: 12px;
-}
-
-/* Title */
-.skill-card h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-/* Text */
-.skill-card p {
-  font-size: 14px;
-  color: #cbd5f5;
-} */
 /* =========================
-   🌐 GLOBAL THEME
-========================= */
-body {
-  background-color: #f9fafb;
-  color: #111827;
+   🌐 GLOBAL DESIGN SYSTEM
+   ========================= */
+
+/* LIGHT MODE */
+:root {
+  --bg-page: linear-gradient(135deg, #f8fafc, #eef2ff, #f1f5f9);
+  --text-main: #111827;
+
+  --nav-bg: #111827;
+  --nav-text: #ffffff;
+
+  /* CLEAN WHITE GLASS */
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-border: rgba(0, 0, 0, 0.06);
+
+  --accent: #4f46e5;
+  --accent-soft: #818cf8;
 }
 
-nav {
-  background-color:#111827;
-  color: #fbfbfb;
-} 
-
-body {
-  background: linear-gradient(
+/* DARK MODE */
+body.dark-mode {
+  --bg-page: linear-gradient(
     135deg,
-    #f8fafc 0%,
-    #eef2ff 50%,
-    #f1f5f9 100%
+    #020617 0%,
+    #0f172a 40%,
+    #1e1b4b 75%,
+    #312e81 100%
   );
+
+  --text-main: #e5e7eb;
+
+  --nav-bg: #020617;
+  --nav-text: #c7d2fe;
+
+  /* 🔥 THIS IS THE KEY CHANGE (CORPORATE GRAY CARDS) */
+  --card-bg: #1f2937;        /* solid gray */
+  --card-border: #374151;    /* subtle border */
+
+  --accent: #8b5cf6;
+  --accent-soft: #c084fc;
 }
 
-Base background
+/* =========================
+   🌍 GLOBAL PAGE
+   ========================= */
 body {
+  background: var(--bg-page);
+  color: var(--text-main);
+
   margin: 0;
-  background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+
+  transition: all 0.4s ease;
+}
+
+/* =========================
+   🧭 NAVBAR
+   ========================= */
+nav {
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  padding: 1rem 2rem;
+}
+
+/* =========================
+   🎨 BUTTONS
+   ========================= */
+button {
+  background: var(--accent);
   color: white;
-  overflow-x: hidden;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.animate-fadeIn {
-    animation: fadeIn 1s ease-in-out;
+button:hover {
+  background: var(--accent-soft);
+  transform: scale(1.05);
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* =========================
+   ✨ CARD SYSTEM
+   ========================= */
+.card,
+.skill-card,
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+
+  border-radius: 18px;
+  padding: 25px;
+
+  transition: all 0.35s ease;
 }
-.dark-mode {
-    background-color: #111;
-    color: white;
+
+/* LIGHT MODE GLASS EFFECT ONLY */
+:root .card,
+:root .skill-card,
+:root .project-card {
+  backdrop-filter: blur(14px);
+}
+
+/* DARK MODE = CLEAN SOLID (NO GLASS) */
+body.dark-mode .card,
+body.dark-mode .skill-card,
+body.dark-mode .project-card {
+  backdrop-filter: none;
+}
+
+/* HOVER EFFECT (SUBTLE + CORPORATE) */
+.card:hover,
+.skill-card:hover,
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* DARK MODE HOVER (SOFT GLOW) */
+body.dark-mode .card:hover,
+body.dark-mode .skill-card:hover,
+body.dark-mode .project-card:hover {
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.25);
+}
+
+/* =========================
+   🧾 TEXT
+   ========================= */
+p {
+  color: inherit;
+  line-height: 1.6;
+}
+
+/* =========================
+   🌌 BACKGROUND GLOW
+   ========================= */
+body.dark-mode::before {
+  content: "";
+  position: fixed;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+
+  background:
+    radial-gradient(circle at 20% 30%, rgba(99,102,241,0.2), transparent 40%),
+    radial-gradient(circle at 80% 60%, rgba(236,72,153,0.15), transparent 50%);
+
+  z-index: -1;
+  filter: blur(80px);
+}
+.wave {
+  display: inline-block;
+  animation: wave-animation 1.8s infinite;
+  transform-origin: 70% 70%;
+}
+
+/* Hand wave keyframes */
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  40% { transform: rotate(14deg); }
+  50% { transform: rotate(-4deg); }
+  60% { transform: rotate(10deg); }
+  70% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
 }

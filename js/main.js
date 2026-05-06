@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded",function(){
     searchProjects();
     renderEducation();
     renderExperience();
-    // renderCertifications();
+    renderCertifications();
+    loadCertificates();
     // renderHackathons();
 
     initScrollProgress();

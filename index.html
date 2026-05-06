@@ -52,24 +52,36 @@ bg-clip-text text-transparent animate-pulse">
             <div class="max-w-3xl text-center">
 
                 <!-- NAME -->
-                <!-- <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-black">
-                    Hey iam Rakshitha 👋
+                <!-- <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-black-600">
+                    Hey, i'm Rakshitha 👋
                 </h2> -->
-                <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-black flex items-center justify-center gap-2">
-                    <span>Hey, I'm Rakshitha</span>
-                    <span class="animate-bounce">👋</span>
+
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-black-600">
+                    Hey, i'm Rakshitha
+                    <span class="wave">👋</span>
                 </h2>
+                <!-- <h2 class="text-4xl lg:text-5xl font-bold mb-4 flex items-center justify-center gap-2 
+bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-600 
+bg-clip-text text-transparent drop-shadow-lg">
+
+                    <span class="tracking-wide">Hey, I'm Rakshitha</span>
+
+                    <!-- Emoji separate (keeps original color) -->
+                <!-- <span class="animate-wave inline-block text-4xl">👋</span>
+
+                </h2> -->
+                <!--  -->
                 <!-- ROLE -->
                 <p class="text-2xl font-bold mb-6">
                     I am a <span id="typing-text" class="text-blue-600"></span>
                 </p>
 
                 <!-- DESCRIPTION -->
-                <p class="text-lg text-slate-600 font-medium mb-8">
+                <!-- <p class="text-lg text-slate-600 font-medium mb-8">
                     A passionate Computer Science student with a love for coding, problem-solving, and
                     building innovative projects. I thrive on learning new technologies and applying them
                     to create impactful solutions.
-                </p>
+                </p> -->
 
                 <!-- BUTTONS -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
@@ -105,7 +117,7 @@ bg-clip-text text-transparent animate-pulse">
 
                 <!-- STATS -->
                 <div class="flex flex-wrap gap-6 justify-center text-sm font-bold text-gray-700">
-                    <span>159+ GitHub commits</span>
+                    <span>559+ GitHub commits</span>
                     <span>100+ LeetCode Problems</span>
                     <span>4 Live Projects</span>
                 </div>
@@ -114,7 +126,6 @@ bg-clip-text text-transparent animate-pulse">
 
         </section>
         </section>
-
         <!-- Tailwind CDN -->
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         </head>
@@ -168,8 +179,8 @@ bg-clip-text text-transparent animate-pulse">
 
                         <!-- THEME BUTTON -->
 
-                        <button id="theme-toggle" class="px-4 py-2 rounded-lg bg-gray-200 dark:bg-gray-700">
-                            🌙 Theme
+                        <button id="theme-toggle" class="px-4 py-2 rounded-lg bg-blue-200 dark:bg-gray-700">
+                            🌙
                         </button>
 
                         <!--LANGUAGE-->
@@ -292,40 +303,26 @@ bg-clip-text text-transparent animate-pulse">
 
                 </section>
 
-                <!-- Certificates Section -->
-                <section class="py-16 bg-gradient-to-r from-blue-100 to-blue-300 dark:from-gray-900 dark:to-gray-800">
-
-                    <h2 class="text-3xl font-bold text-center mb-10 text-gray-800 dark:text-white">
-                        Certificates
-                    </h2>
-
-                    <div id="certificates-container"
-                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
-                        <!-- JS will inject cards here -->
-                    </div>
-
-                </section>
 
 
                 <!-- CONTACT MODAL Together -->
                 <section id="contact" class="relative py-24 px-6 lg:px-20 overflow-hidden">
 
-                    <!-- 🌈 LIGHT BACKGROUND -->
-                    <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
+                    <!-- 🌈 Dynamic Background -->
+                    <div class="absolute inset-0 contact-bg"></div>
 
-                    <!-- ✨ SOFT GLOW -->
-                    <div class="absolute top-0 left-0 w-72 h-72 bg-blue-200/40 blur-[120px] rounded-full"></div>
-                    <div class="absolute bottom-0 right-0 w-72 h-72 bg-purple-200/40 blur-[120px] rounded-full">
-                    </div>
+                    <!-- ✨ Glow -->
+                    <div class="absolute top-0 left-0 glow-1"></div>
+                    <div class="absolute bottom-0 right-0 glow-2"></div>
 
                     <div class="relative z-10">
 
                         <!-- HEADER -->
                         <div class="text-center mb-16">
-                            <h2 class="text-4xl font-bold mb-3 text-gray-800">
+                            <h2 class="text-4xl font-bold mb-3">
                                 Let's Work Together 🚀
                             </h2>
-                            <p class="text-gray-500">
+                            <p class="opacity-70">
                                 Have a project or opportunity? Let’s connect and build something great.
                             </p>
                         </div>
@@ -333,199 +330,140 @@ bg-clip-text text-transparent animate-pulse">
                         <!-- GRID -->
                         <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
 
-                            <!-- LEFT: CONTACT INFO -->
+                            <!-- LEFT -->
                             <div class="space-y-6">
 
-                                <div
-                                    class="p-6 bg-gray-100 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition">
-                                    <h3 class="text-lg font-semibold mb-2 text-gray-800">📧 Email</h3>
-                                    <p class="text-gray-600">ynrakshitha2004@gmail.com</p>
+                                <div class="card">
+                                    <h3 class="text-lg font-semibold mb-2">📧 Email</h3>
+                                    <p>ynrakshitha2004@gmail.com</p>
                                 </div>
 
-                                <div
-                                    class="p-6 bg-gray-100 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition">
-                                    <h3 class="text-lg font-semibold mb-2 text-gray-800">🔗 LinkedIn</h3>
-                                    <a href="https://www.linkedin.com/in/rakshitha-yn/" target="_blank"
-                                        class="text-blue-600 hover:underline">
-                                        View Profile
-                                    </a>
+                                <div class="card">
+                                    <h3 class="text-lg font-semibold mb-2">🔗 LinkedIn</h3>
+                                    <a href="#" target="_blank">View Profile</a>
                                 </div>
 
-                                <div
-                                    class="p-6 bg-gray-100 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition">
-                                    <h3 class="text-lg font-semibold mb-2 text-gray-800">💻 GitHub</h3>
-                                    <a href="https://github.com/ynrakshitha2004-cloud" target="_blank"
-                                        class="text-blue-600 hover:underline">
-                                        View Repository
-                                    </a>
+                                <div class="card">
+                                    <h3 class="text-lg font-semibold mb-2">💻 GitHub</h3>
+                                    <a href="#" target="_blank">View Repository</a>
                                 </div>
 
                             </div>
 
+                            <!-- RIGHT FORM -->
+                            <div class="card">
 
-                            <div class="p-8 rounded-2xlbg-gradient-to-br from-sky-50 via-white to-sky-100border border-sky-200shadow-lg hover:shadow-2xl transition-all duration-300
-">
+                                <form class="space-y-5">
 
-                                <form id="contact-form" class="space-y-5">
+                                    <input type="text" placeholder="Your Name" class="input-field">
 
-                                    <!-- NAME -->
-                                    <input type="text" placeholder="Your Name" required minlength="2" class="
-                w-full px-4 py-3 rounded-lg
+                                    <input type="email" placeholder="Your Email" class="input-field">
 
-                bg-white/70
-                border border-sky-200
+                                    <textarea rows="4" placeholder="Your Message" class="input-field"></textarea>
 
-                text-slate-800 placeholder-slate-400
-
-                focus:outline-none focus:ring-2 focus:ring-sky-400
-                focus:border-sky-400
-
-                transition
-            ">
-
-                                    <!-- EMAIL -->
-                                    <input type="email" placeholder="Your Email" required class="
-                w-full px-4 py-3 rounded-lg
-
-                bg-white/70
-                border border-sky-200
-
-                text-slate-800 placeholder-slate-400
-
-                focus:outline-none focus:ring-2 focus:ring-sky-400
-                focus:border-sky-400
-
-                transition
-            ">
-
-                                    <!-- MESSAGE -->
-                                    <textarea rows="4" placeholder="Your Message" required minlength="10" class="
-                w-full px-4 py-3 rounded-lg
-
-                bg-white/70
-                border border-sky-200
-
-                text-slate-800 placeholder-slate-400
-
-                focus:outline-none focus:ring-2 focus:ring-sky-400
-                focus:border-sky-400
-
-                transition
-            "></textarea>
-
-                                    <!-- BUTTON -->
-                                    <button type="submit" class="
-                w-full py-3 rounded-lg font-semibold
-
-                bg-gradient-to-r from-sky-500 to-blue-500
-                text-white
-
-                hover:from-sky-600 hover:to-blue-600
-
-                shadow-md hover:shadow-xl
-
-                transition-all duration-300
-            ">
+                                    <button type="submit" class="btn-primary">
                                         Send Message 🚀
                                     </button>
 
                                 </form>
 
                             </div>
-                            <!-- CONTACT MODAL -->
-                            <button id="modal-trigger"
-                                class="fixed bottom-8 right-8 w-16 h-16 bg-blue-900 text-white rounded-full shadow-2xl flex items-center justify-center text-2xl font-bold">
-                                ☏
-                            </button>
 
-                            <div id="contact-modal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-md">
+                        </div>
+                    </div>
+                </section>
+                <!-- CONTACT MODAL -->
+                <button id="modal-trigger"
+                    class="fixed bottom-8 right-8 w-16 h-16 bg-blue-900 text-white rounded-full shadow-2xl flex items-center justify-center text-2xl font-bold">
+                    ☏
+                </button>
 
-                                <div class="flex items-center justify-center min-h-screen p-4">
+                <div id="contact-modal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-md">
 
-                                    <div id="modal-content"
-                                        class="bg-white w-full max-w-md rounded-2xl shadow-2xl scale-95 opacity-0 transition-all duration-300">
+                    <div class="flex items-center justify-center min-h-screen p-4">
 
-                                        <div class="sticky top-0 border-b p-8 pt-12 bg-white">
+                        <div id="modal-content"
+                            class="bg-white w-full max-w-md rounded-2xl shadow-2xl scale-95 opacity-0 transition-all duration-300">
 
-                                            <h3 class="text-2xl font-bold">Contact Me</h3>
+                            <div class="sticky top-0 border-b p-8 pt-12 bg-white">
 
-                                            <button id="modal-close" class="absolute top-6 right-6 text-2xl font-bold">
-                                                ×
-                                            </button>
+                                <h3 class="text-2xl font-bold">Contact Me</h3>
 
-                                        </div>
-
-                                        <form id="contact-form" class="p-8 space-y-4">
-
-                                            <input id="contact-name" type="text" placeholder="Your name"
-                                                class="w-full border rounded px-4 py-3">
-
-                                            <input id="contact-email" type="email" placeholder="email@website.com"
-                                                class="w-full border rounded px-4 py-3">
-
-                                            <p id="form-message" class="text-sm text-red-500"></p>
-
-                                            <div class="flex flex-col sm:flex-row gap-4 pt-4">
-
-                                                <button type="button" id="form-cancel"
-                                                    class="flex-1 font-bold py-4 px-6">
-                                                    Cancel
-                                                </button>
-
-                                                <button type="submit" class="flex-1 font-bold py-4 px-6">
-                                                    Submit
-                                                </button>
-
-                                            </div>
-
-                                        </form>
-
-                                    </div>
-
-                                </div>
+                                <button id="modal-close" class="absolute top-6 right-6 text-2xl font-bold">
+                                    ×
+                                </button>
 
                             </div>
 
+                            <form id="contact-form" class="p-8 space-y-4">
 
-                            <button id="back-to-top"
-                                class="fixed bottom-28 right-8 w-14 h-14 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg hidden items-center justify-center text-2xl z-40 transition-all duration-300 transform translate-y-4 opacity-0">
-                                ↑
-                            </button>
-                            <!--script-->
-                            <!--  DATA LAYER -->
-                            <script defer src="js/data/projects.js"></script>
-                            <script defer src="js/data/skills.js"></script>
-                            <script defer src="js/data/experience.js"></script>
-                            <script defer src="js/data/certifications.js"></script>
+                                <input id="contact-name" type="text" placeholder="Your name"
+                                    class="w-full border rounded px-4 py-3">
 
-                            <!-- CORE RENDERING-->
-                            <script defer src="js/features/project-render.js"></script>
-                            <script defer src="js/features/skills-render.js"></script>
-                            <script defer src="js/features/experience-render.js"></script>
-                            <script defer src="js/features/certifications-render.js"></script>
+                                <input id="contact-email" type="email" placeholder="email@website.com"
+                                    class="w-full border rounded px-4 py-3">
 
-                            <!-- FEATURE LOGIC-->
-                            <script defer src="js/features/project-filter.js"></script>
-                            <script defer src="js/features/project-search.js"></script>
-                            <script defer src="js/features/skills-filter.js"></script>
+                                <p id="form-message" class="text-sm text-red-500"></p>
 
-                            <!--  UI FEATURES-->
-                            <script defer src="js/features/modal.js"></script>
-                            <script defer src="js/features/contact-validation.js"></script>
+                                <div class="flex flex-col sm:flex-row gap-4 pt-4">
 
-                            <!-- ⭐ THEME (important) -->
-                            <script defer src="js/features/theme-toggle.js"></script>
+                                    <button type="button" id="form-cancel" class="flex-1 font-bold py-4 px-6">
+                                        Cancel
+                                    </button>
 
-                            <script defer src="js/features/typing-animation.js"></script>
-                            <script defer src="js/features/greeting.js"></script>
-                            <script defer src="js/features/geolocation.js"></script>
-                            <script defer src="js/features/scroll-progress.js"></script>
-                            <script defer src="js/features/scroll-spy.js"></script>
-                            <script defer src="js/features/back-to-top.js"></script>
+                                    <button type="submit" class="flex-1 font-bold py-4 px-6">
+                                        Submit
+                                    </button>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
 
-                            <script defer src="js/features/certifications.js"></script>
-                            <script defer src="js/main.js"></script>
+                <button id="back-to-top"
+                    class="fixed bottom-28 right-8 w-14 h-14 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg hidden items-center justify-center text-2xl z-40 transition-all duration-300 transform translate-y-4 opacity-0">
+                    ↑
+                </button>
+                <!--script-->
+                <!--  DATA LAYER -->
+                <script defer src="js/data/projects.js"></script>
+                <script defer src="js/data/skills.js"></script>
+                <script defer src="js/data/experience.js"></script>
+                <script defer src="js/data/certifications.js"></script>
+
+                <!-- CORE RENDERING-->
+                <script defer src="js/features/project-render.js"></script>
+                <script defer src="js/features/skills-render.js"></script>
+                <script defer src="js/features/experience-render.js"></script>
+
+                <!-- FEATURE LOGIC-->
+                <script defer src="js/features/project-filter.js"></script>
+                <script defer src="js/features/project-search.js"></script>
+                <script defer src="js/features/skills-filter.js"></script>
+
+                <!--  UI FEATURES-->
+                <script defer src="js/features/modal.js"></script>
+                <script defer src="js/features/contact-validation.js"></script>
+
+                <!-- ⭐ THEME (important) -->
+                <script defer src="js/features/theme-toggle.js"></script>
+
+                <script defer src="js/features/typing-animation.js"></script>
+                <script defer src="js/features/greeting.js"></script>
+                <script defer src="js/features/geolocation.js"></script>
+                <script defer src="js/features/scroll-progress.js"></script>
+                <script defer src="js/features/scroll-spy.js"></script>
+                <script defer src="js/features/back-to-top.js"></script>
+
+
+
+                <script defer src="js/main.js"></script>
         </body>
 
         </html>
