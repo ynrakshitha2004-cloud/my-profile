@@ -6,7 +6,6 @@ const projectsData = [
     description:
       "Full stack movie ticket booking application with AI-powered suggestions.",
     technologies: ["ReactJS", "ExpressJS", "MongoDB"],
-    status: "Live",
     github: "https://github.com/ynrakshitha2004-cloud"
   },
   {
@@ -16,8 +15,7 @@ const projectsData = [
     description:
       "Responsive portfolio showcasing projects, skills, and contact system.",
     technologies: ["HTML", "Tailwind CSS", "JavaScript"],
-    status: "Live",
-    github: "https://github.com/ynrakshitha2004-cloud"
+     github: "https://github.com/ynrakshitha2004-cloud"
   },
   {
     id: 3,
@@ -36,7 +34,7 @@ const projectsData = [
     description:
       "Hide secret messages inside images using steganography.",
     technologies: ["Python", "OpenCV", "Encryption"],
-    status: "Prototype",
+    status: "prototype",
     
   },
   {
