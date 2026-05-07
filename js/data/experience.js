@@ -16,6 +16,14 @@ const experienceData = [
         description: "Participated in an intensive Python development workshop focused on core programming concepts",
         skills: ["Python", "OOPs Concepts", "Problem Solving", "Data Structures", "File Handling"]
     }, 
+    {
+        type: "experience",
+        title: "java",
+        company: "ABC Tech Training Company",
+        duration: "2024 - 2025",
+        description: "Participated in an intensive java development course focused on core programming concepts",
+        skills: ["Java", "OOPs Concepts", "Problem Solving", "Data Structures", "File Handling"]
+    }, 
     
 
 ];
